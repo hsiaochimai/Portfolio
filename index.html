@@ -3,21 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <title>Leon Marbukh</title>
 </head>
 <body>
-    <nav role="navigation">Nav</nav>
-    <header role="banner">
-        <h1>Introduction</h1>
-    </header>
-    <section>
-        About Me
+    <nav class="header">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="#intro">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="https://github.com/lyunya">Github</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="intro" id="intro">
+        <img src="imgs/mobile-leon.png" id="smallAvatar"></img>
+        <h1>Hello! My name is Leon, and I'm a Portland-based full stack developer.</h1>
+    </div>
+    <div id="about">
+        <img src="imgs/desktop-leon.jpg" id="desktopAvatar"></img>
+        <p>I'm a web developer currently studying the full-stack web development bootcamp at Thinkful. 
+            I love coding because of the unlimited potential to develop life changing products that help shape our world.</p>
+        <p>
+            My favorite things are hiking up mountains, listening to records, going onroad trips, 
+            and eating popcorn mixed with chocolate at the movies.
+        </p>
+    </div>
+    <hr>
+    <section id="projects" class='projectsColumnContainer'>
+        <h2>Projects</h2>
+        <div id="movieQuiz" class="apps">
+            <a href="https://lyunya.github.io/Quiz-App/"><img class="image"src="imgs/movie-quiz.png"></a>
+            <p>Test your 21st century film knowledge by taking my quiz. This app was built with JavaScript, HTML, CSS, and jQuery.
+            </p>
+            <a href="https://lyunya.github.io/Quiz-App/">Live</a>
+            <a href="https://github.com/lyunya/Quiz-App">Github Repo</a>
+        </div>
+        <div id="greyApp" class='apps'>
+            <a href="https://github.com/lyunya/Quiz-App"><img class="image"src="imgs/Grey+Box.jpg"></a>
+            <p>This is my next project. It is an image of a greybox. It is a placeholder for my next project.
+            </p>
+            <a href="https://lyunya.github.io/Quiz-App/">Live</a>
+            <a href="https://github.com/lyunya/Quiz-App">Github Repo</a>
+        </div>  
+        </section>
     </section>
-    <section>
-        Projects
+    <hr>
+    <section class='contact' id='contact'>
+        <h2>Contact</h2>
+        <ul>
+        <li><a href="https://github.com/lyunya/"><img class="image"src="imgs/github.svg"></a></li>
+        <li></li><a href="mailto:leonmarbukh@gmail.com"><img class="image"src="imgs/email.svg"></a></li>
+        <li></li><a href="https://www.linkedin.com/in/leonmarbukh/"><img class="image"src="imgs/linkedin.svg"></a></li>
+        </ul>  
     </section>
-    <footer role="content-info">Footer</footer>
 </body>
 </html>
